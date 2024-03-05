@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    overflow: hidden;
+}
+.container {
+    /* height: 100vh; */
+    width: 100vw;
+    overflow: hidden;
+}
+#myVideo {
+   background-size: cover;
+    height: 20%;
+    width: 100%;
+  }
+.clock{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 1px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    display: flex
+}
+#end{
+    font-size: 7vh;
+    position: absolute;
+    top: 10vh;
+}
+.clock .nav nav {
+    height: 19vh;
+    width: 14vw;
+    background-color: rgba(255, 255, 255, 0.233);
+    color: black;
+    margin-left: 2vh;
+    font-size: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.603);
+}
+@media only screen and (max-width: 1280px){
+    #myVideo {
+        background-size: cover;
+        height: 21%;
+        width: 112%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    #myVideo{
+        display: none
+    }
+    .clock .nav nav {
+        height: 12vh;
+        width: 18vw;
+        font-size: 7vh;
+        color: white
+    }
+    #end {
+        font-size: 6vh;
+        position: absolute;
+        top: 14vh;
+    }
+}
+@media only screen and (max-width: 450px){
+    .clock .nav nav {
+        height: 11vh;
+        width: 19vw;
+        font-size: 5vh;
+        margin-bottom: 6vh;
+    }
+}
